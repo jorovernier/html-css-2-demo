@@ -4,6 +4,8 @@ body > div {
     height: 1200px;
 }
 
+/* Position and Selector Section ---------------------- */
+
 .child {
     height: 100px;
     width: 100px;
@@ -26,14 +28,18 @@ body > div {
 }
 
 #box3 {
-    background-color: green;
+    background-color: blue;
     position: sticky;
     top: 5px;
 }
 
+/* Article Section ------------------------------------ */
+
 div article {
     color: steelblue;
 }
+
+/* Inline and Block Section --------------------------- */
 
 #inline {
     background-color: aqua;
@@ -56,14 +62,18 @@ div article {
     width: 50px;
 }
 
+/* Flex Section --------------------------------------- */
+/* To test flex-wrap, uncomment the flex-wrap attribute below and make the width of flex-section be 200px. */
+
 #flexbox {
     background-color: pink;
     height: 300px;
     width: 90%;
     display: flex;
-    flex-direction: column-reverse;
-    /* justify-content: space-around;
-    align-items: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
 }
 
 #flexbox > div {
@@ -72,6 +82,8 @@ div article {
     width: 100px;
     border: 5px dotted black;
 }
+
+/* Baseline Section ----------------------------------- */
 
 #baseline-section {
     background-color: brown;
@@ -95,6 +107,8 @@ div article {
     height: 125px;
 }
 
+/* Content and Border Box Section --------------------- */
+
 #content-box {
     box-sizing: content-box;
     width: 100px;
@@ -112,6 +126,8 @@ div article {
     padding: 5px;
     background-color: yellow;
 }
+
+/* Footer Section ------------------------------------- */
 
 footer {
     background-color: blueviolet;
