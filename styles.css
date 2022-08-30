@@ -1,12 +1,13 @@
 body > div {
     background-color: blanchedalmond;
-    position: relative;
-    height: 1200px;
+    position: relative; 
+    width: 500px;
+    height: 1000px;
 }
 
 /* Position and Selector Section ---------------------- */
 
-.child {
+.children {
     height: 100px;
     width: 100px;
     border: 5px solid black;
@@ -15,20 +16,19 @@ body > div {
 #box1 {
     background-color: red;
     position: relative;
-    top: 15px;
+    top: 5px;
     left: 15px;
-    /* z-index: 2; */
 }
 
 #box2 {
     background-color: yellow;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
 }
 
 #box3 {
-    background-color: blue;
+    background-color: green;
     position: sticky;
     top: 5px;
 }
@@ -41,23 +41,26 @@ div article {
 
 /* Inline and Block Section --------------------------- */
 
-#inline {
+#inline-section {
     background-color: aqua;
 }
 
-#inline > div {
+#inline-section > div {
     background-color: blue;
+    border: 5px dotted black;
     display: inline;
     color: white;
 }
 
-#inline-block {
+#ib-section {
     background-color: greenyellow;
 }
 
-#inline-block > div {
+#ib-section > div {
     background-color: green;
+    border: 5px dotted black;
     display: inline-block;
+    color: white;
     height: 50px;
     width: 50px;
 }
@@ -65,22 +68,21 @@ div article {
 /* Flex Section --------------------------------------- */
 /* To test flex-wrap, uncomment the flex-wrap attribute below and make the width of flex-section be 200px. */
 
-#flexbox {
-    background-color: pink;
+#flex-section {
+    background-color: palevioletred;
     height: 300px;
-    width: 90%;
+    width: 200px;
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#flexbox > div {
+#flex-section > div {
     background-color: red;
     height: 100px;
     width: 100px;
-    border: 5px dotted black;
 }
 
 /* Baseline Section ----------------------------------- */
@@ -95,14 +97,17 @@ div article {
     background-color: orange;
     display: flex;
     align-items: center;
+    width: 50px;
 }
 
 #tall {
     height: 150px;
 }
+
 #short {
     height: 100px;
 }
+
 #medium {
     height: 125px;
 }
@@ -131,7 +136,8 @@ div article {
 
 footer {
     background-color: blueviolet;
-    width: 100vw;
     position: fixed;
     bottom: 0px;
+    width: 100%;
+    height: 30px;
 }
