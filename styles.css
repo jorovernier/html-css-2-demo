@@ -1,8 +1,8 @@
 body > div {
     background-color: blanchedalmond;
     position: relative; 
+    height: 2000px;
     width: 500px;
-    height: 1000px;
 }
 
 /* Position and Selector Section ---------------------- */
@@ -16,21 +16,23 @@ body > div {
 #box1 {
     background-color: red;
     position: relative;
-    top: 5px;
+    top: 15px;
     left: 15px;
+    z-index: 2;
 }
 
 #box2 {
     background-color: yellow;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 0px;
 }
 
 #box3 {
     background-color: green;
     position: sticky;
     top: 5px;
+    z-index: 1;
 }
 
 /* Article Section ------------------------------------ */
@@ -47,8 +49,8 @@ div article {
 
 #inline-section > div {
     background-color: blue;
-    border: 5px dotted black;
     display: inline;
+    border: 5px dotted black;
     color: white;
 }
 
