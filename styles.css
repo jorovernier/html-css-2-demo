@@ -35,16 +35,22 @@ body > div {
     z-index: 1;
 }
 
-/* Article Section ------------------------------------ */
+/* Inline Section --------------------------- */
 
-div article {
-    color: cornflowerblue;
+#inline-section {
+    background-color: aqua;
+} 
+
+#inline-section > div {
+    background-color: blue;
+    display: inline;
+    border: 5px dotted black;
 }
 
 /* Inline Block Section --------------------------- */
 
 #ib-section {
-    background-color: greenyellow;
+    background-color: chartreuse;
 }
 
 #ib-section > div {
@@ -52,26 +58,27 @@ div article {
     display: inline-block;
     height: 50px;
     width: 50px;
+    border: 5px dashed black;
 }
 
 /* Flex Section --------------------------------------- */
 /* To test flex-wrap, uncomment the flex-wrap attribute below and make the width of flex-section be 200px. */
 
 #flex-section {
-    background-color: palevioletred;
-    height: 350px;
-    width: 250px;
+    background-color: darksalmon;
+    height: 300px;
     display: flex;
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 #flex-section > div {
     background-color: red;
     height: 100px;
     width: 100px;
+    border: 5px solid black;
 }
 
 /* Baseline Section ----------------------------------- */
@@ -126,4 +133,6 @@ footer {
     background-color: blueviolet;
     position: fixed;
     bottom: 0px;
+    height: 30px;
+    width: 100vw;
 }
