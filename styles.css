@@ -10,7 +10,7 @@ body > div {
 .children {
     height: 100px;
     width: 100px;
-    border: 5px solid black;
+    border: solid black 5px;
 }
 
 #box1 {
@@ -25,7 +25,7 @@ body > div {
     background-color: yellow;
     position: absolute;
     top: 30px;
-    right: 0px;
+    right: 30px;
 }
 
 #box3 {
@@ -44,7 +44,7 @@ body > div {
 #inline-section > div {
     background-color: blue;
     display: inline;
-    border: 5px dotted black;
+    border: dotted black 5px;
 }
 
 /* Inline Block Section --------------------------- */
@@ -58,15 +58,16 @@ body > div {
     display: inline-block;
     height: 50px;
     width: 50px;
-    border: 5px dashed black;
+    border: dashed black 5px;
 }
 
 /* Flex Section --------------------------------------- */
-/* To test flex-wrap, uncomment the flex-wrap attribute below and make the width of flex-section be 200px. */
+/* To test flex-wrap, uncomment the flex-wrap and width attributes. Since the divs inside of the flex-section are 300px total and the width of flex-section is only 200px, it will move the third div down onto another row. */
 
 #flex-section {
-    background-color: darksalmon;
+    background-color: palevioletred;
     height: 300px;
+    /* width: 200px; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -78,7 +79,6 @@ body > div {
     background-color: red;
     height: 100px;
     width: 100px;
-    border: 5px solid black;
 }
 
 /* Baseline Section ----------------------------------- */
@@ -91,6 +91,7 @@ body > div {
 
 #baseline-section > div {
     background-color: orange;
+    border: solid white 5px;
     display: flex;
     align-items: center;
 }
@@ -133,6 +134,5 @@ footer {
     background-color: blueviolet;
     position: fixed;
     bottom: 0px;
-    height: 30px;
     width: 100vw;
 }
